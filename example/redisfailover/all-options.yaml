@@ -23,7 +23,7 @@ spec:
       limits:
         cpu: 400m
         memory: 500Mi
-    exporter: false                          # Optional. False by default. Adds a redis-exporter container to export metrics.
+    exporter: true                          # Optional. False by default. Adds a redis-exporter container to export metrics.
     exporterImage: oliver006/redis_exporter  # Optional. oliver006/redis_exporter by default.
     exporterVersion: v0.11.3                 # Optional. v0.11.3 by default.
     storage:
